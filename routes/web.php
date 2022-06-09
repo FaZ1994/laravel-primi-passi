@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('homepage');
+})->name('home');
+
+Route::get('/views-one', function () {
+    return view('views-one');
+})->name('views-one');
+
+Route::get('/views-two', function () {
+    return view('views-two');
+})->name('views-two');
+
+Route::get('/views-three', function () {
+    return view('views-three');
+})->name('views-three');
